@@ -14,7 +14,8 @@ const config = {
 			strict: true
 		}),
 		paths: {
-			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH || '/docs-fitforecast'
+			base: process.argv.includes('dev') ? '' : process.env.BASE_PATH || '/docs-fitforecast',
+			relative: false
 		},
 		prerender: {
 			entries: ['*']
