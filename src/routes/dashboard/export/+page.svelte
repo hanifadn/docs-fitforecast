@@ -5,6 +5,7 @@
 	import { classifyBodyFat } from '$lib/engine/bodyFatClassifier';
 	import { calculateHealthRisk } from '$lib/engine/healthRiskScore';
 	import { getScenarioComparison } from '$lib/engine/scenarioEngine';
+	import { base } from '$app/paths';
 
 	let { data } = $props();
 	let profile = $derived(data.fitData.profile);
@@ -32,7 +33,7 @@
 
 	function copyShareLink() {
 		const encoded = generateShareData();
-		const url = `${window.location.origin}/dashboard?share=${encoded}`;
+		const url = `${window.location.origin}${base}/dashboard?share=${encoded}`;
 		navigator.clipboard.writeText(url).then(() => {
 			copied = true;
 			setTimeout(() => copied = false, 2000);
@@ -58,7 +59,7 @@
 
 <div class="mx-auto max-w-4xl px-4 py-10" class:print-mode={printMode}>
 	<div class="mb-8">
-		<a href="/dashboard" class="mb-4 inline-flex items-center gap-1 text-sm text-muted-foreground transition-colors hover:text-foreground">
+		<a href="{base}/dashboard" class="mb-4 inline-flex items-center gap-1 text-sm text-muted-foreground transition-colors hover:text-foreground">
 			<svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
 				<path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
 			</svg>

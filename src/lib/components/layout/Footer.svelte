@@ -1,16 +1,17 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	const currentYear = new Date().getFullYear();
 
 	const platformLinks = [
-		{ href: '/', label: 'Home' },
-		{ href: '/dashboard', label: 'Dashboard' },
-		{ href: '/dashboard/export', label: 'Export' }
+		{ href: `${base}/`, label: 'Home' },
+		{ href: `${base}/dashboard`, label: 'Dashboard' },
+		{ href: `${base}/dashboard/export`, label: 'Export' }
 	];
 
 	const resourceLinks = [
-		{ href: '/how-it-works', label: 'How It Works' },
-		{ href: '/glossary', label: 'Glossary' },
-		{ href: '/faq', label: 'FAQ' }
+		{ href: `${base}/how-it-works`, label: 'How It Works' },
+		{ href: `${base}/glossary`, label: 'Glossary' },
+		{ href: `${base}/faq`, label: 'FAQ' }
 	];
 </script>
 
@@ -54,7 +55,7 @@
 				<ul class="space-y-2">
 					<li>
 						<a
-							href="/disclaimer"
+							href="{base}/disclaimer"
 							class="text-sm text-muted-foreground transition-colors hover:text-primary"
 						>
 							Disclaimer

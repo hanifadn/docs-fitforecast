@@ -10,6 +10,7 @@
 	import { forecastTransformation } from '$lib/engine/transformationForecaster';
 	import { getScenarioComparison } from '$lib/engine/scenarioEngine';
 	import { estimateMilestones } from '$lib/engine/strengthMilestoneEstimator';
+	import { base } from '$app/paths';
 
 	let { data } = $props();
 	let fitData = $derived(data.fitData);
@@ -68,7 +69,7 @@
 			</p>
 		</div>
 		<a
-			href="/dashboard/export"
+			href="{base}/dashboard/export"
 			class="inline-flex items-center gap-2 rounded-lg border border-border bg-card px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-muted"
 		>
 			<svg class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">

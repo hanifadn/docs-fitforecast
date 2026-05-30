@@ -2,12 +2,13 @@
 	import '../app.css';
 	import Navbar from '$lib/components/layout/Navbar.svelte';
 	import Footer from '$lib/components/layout/Footer.svelte';
+	import { base } from '$app/paths';
 
 	let { children, data } = $props();
 </script>
 
 <svelte:head>
-	<link rel="icon" href="/favicon.svg" />
+	<link rel="icon" href="{base}/favicon.svg" />
 </svelte:head>
 
 <div class="flex min-h-screen flex-col">

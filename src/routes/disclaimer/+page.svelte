@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { base } from '$app/paths';
+
 	const sections = [
 		{
 			number: 1,
@@ -98,7 +100,7 @@
 			By continuing to use FitForecast, you acknowledge that you have read, understood, and agree to the terms of this disclaimer.
 		</p>
 		<a
-			href="/dashboard"
+			href="{base}/dashboard"
 			class="mt-4 inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-2.5 text-sm font-semibold text-background transition-colors hover:bg-primary/90"
 		>
 			Back to Dashboard

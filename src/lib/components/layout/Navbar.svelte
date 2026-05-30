@@ -1,21 +1,24 @@
 <script lang="ts">
 	import { page } from '$app/state';
+	import { base } from '$app/paths';
 
 	let menuOpen = $state(false);
 
 	const navLinks = [
-		{ href: '/', label: 'Home' },
-		{ href: '/profile', label: 'Profile' },
-		{ href: '/log', label: 'Exercise Log' },
-		{ href: '/dashboard', label: 'Dashboard' },
-		{ href: '/how-it-works', label: 'How It Works' },
-		{ href: '/glossary', label: 'Glossary' },
-		{ href: '/faq', label: 'FAQ' }
+		{ href: `${base}/`, label: 'Home' },
+		{ href: `${base}/profile`, label: 'Profile' },
+		{ href: `${base}/log`, label: 'Exercise Log' },
+		{ href: `${base}/dashboard`, label: 'Dashboard' },
+		{ href: `${base}/how-it-works`, label: 'How It Works' },
+		{ href: `${base}/glossary`, label: 'Glossary' },
+		{ href: `${base}/faq`, label: 'FAQ' }
 	];
 
 	function isActive(href: string): boolean {
-		if (href === '/') return page.url.pathname === '/';
-		return page.url.pathname.startsWith(href);
+		const targetHref = href === `${base}/` ? '/' : href.replace(base, '');
+		const currentPath = page.url.pathname.replace(base, '') || '/';
+		if (targetHref === '/') return currentPath === '/';
+		return currentPath.startsWith(targetHref);
 	}
 
 	function toggleMenu() {
@@ -31,7 +34,7 @@
 	class="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur-xl"
 >
 	<div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
-		<a href="/" class="text-xl font-bold text-primary">FitForecast</a>
+		<a href="{base}/" class="text-xl font-bold text-primary">FitForecast</a>
 
 		<div class="hidden items-center gap-1 md:flex">
 			{#each navLinks as link}

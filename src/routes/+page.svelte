@@ -1,6 +1,7 @@
 <script lang="ts">
 	import Disclaimer from '$lib/components/layout/Disclaimer.svelte';
 	import MetricCard from '$lib/components/shared/MetricCard.svelte';
+	import { base } from '$app/paths';
 
 	let { data } = $props();
 	let profile = $derived(data.fitData.profile);
@@ -32,13 +33,13 @@
 
 		<div class="mt-8 flex flex-wrap justify-center gap-3">
 			<a
-				href="/dashboard"
+				href="{base}/dashboard"
 				class="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-background transition-colors hover:bg-primary/90"
 			>
 				View Dashboard
 			</a>
 			<a
-				href="/log"
+				href="{base}/log"
 				class="inline-flex items-center gap-2 rounded-lg border border-border bg-card px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-muted"
 			>
 				Explore Exercise Log
@@ -149,13 +150,13 @@
 		</p>
 		<div class="mt-6 flex flex-wrap justify-center gap-3">
 			<a
-				href="/dashboard"
+				href="{base}/dashboard"
 				class="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-background transition-colors hover:bg-primary/90"
 			>
 				View Dashboard
 			</a>
 			<a
-				href="/log"
+				href="{base}/log"
 				class="inline-flex items-center gap-2 rounded-lg border border-border bg-card px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:bg-muted"
 			>
 				Explore Exercise Log
