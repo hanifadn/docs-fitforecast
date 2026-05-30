@@ -29,15 +29,13 @@ jobs:
         with:
           node-version: 24
           cache: 'npm'
-          cache-dependency-path: fitforecast/package-lock.json
+          cache-dependency-path: package-lock.json
 
       - name: Install dependencies
         run: npm ci
-        working-directory: fitforecast
 
       - name: Build
         run: npm run build
-        working-directory: fitforecast
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -45,7 +43,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: fitforecast/build
+          path: build
 
   deploy:
     environment:
