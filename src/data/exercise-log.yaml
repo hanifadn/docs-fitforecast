@@ -1,0 +1,763 @@
+# =============================================================================
+# FitForecast — 8-Month Exercise Log
+# Program: 3x per week · Fat Loss + Endurance · Lower Back Safe
+# Structure: Workout A (Upper + Core) · Workout B (Lower + Cardio) ·
+#            Workout C (Full Body + Endurance)
+# =============================================================================
+
+# ── MONTH 1 — Foundation Phase (Weeks 1–4) ───────────────────────────────────
+
+- week: 1
+  phase: "Foundation"
+  sessions:
+    - day: 1
+      date: "2026-05-25"
+      workout_type: "A — Upper Body + Core"
+      duration_minutes: 55
+      exercises:
+        - name: "Stationary Bike (warm-up)"
+          sets: 1
+          duration_minutes: 10
+          intensity: "easy — RPE 3/10"
+          notes: "Low resistance. Focus on breathing."
+        - name: "Lat Pulldown (wide grip)"
+          sets: 3
+          reps: 12
+          weight_kg: 30
+          rest_seconds: 60
+          notes: "Full range. Squeeze lats at bottom. No spinal extension."
+        - name: "Seated Cable Row"
+          sets: 3
+          reps: 12
+          weight_kg: 25
+          rest_seconds: 60
+          notes: "Neutral spine. Pull to lower chest. Controlled eccentric."
+        - name: "Chest Press Machine"
+          sets: 3
+          reps: 12
+          weight_kg: 30
+          rest_seconds: 60
+          notes: "Adjust seat so handles are at mid-chest level."
+        - name: "Seated Shoulder Press Machine"
+          sets: 3
+          reps: 10
+          weight_kg: 20
+          rest_seconds: 60
+          notes: "Supported back. Do not arch lumbar spine."
+        - name: "Face Pull (cable)"
+          sets: 3
+          reps: 15
+          weight_kg: 10
+          rest_seconds: 45
+          notes: "External rotation at end range. Improves posture."
+        - name: "Dead Bug"
+          sets: 3
+          reps: 8
+          notes: "Each side. Lower back pressed into floor throughout. CORE PRIORITY."
+        - name: "Bird Dog"
+          sets: 3
+          reps: 8
+          notes: "Each side. Slow, controlled. Glute squeeze at full extension."
+
+    - day: 3
+      date: "2026-05-27"
+      workout_type: "B — Lower Body + Cardio"
+      duration_minutes: 60
+      exercises:
+        - name: "Treadmill Incline Walk (warm-up)"
+          sets: 1
+          duration_minutes: 10
+          speed_kmh: 4.5
+          incline_percent: 3
+          notes: "Warm-up pace. Focus on posture."
+        - name: "Glute Bridge"
+          sets: 3
+          reps: 15
+          notes: "Drive through heels. Hold 2 seconds at top."
+        - name: "Goblet Squat"
+          sets: 3
+          reps: 10
+          weight_kg: 8
+          rest_seconds: 60
+          notes: "Dumbbell held at chest. Depth to parallel only."
+        - name: "Leg Press (shallow depth)"
+          sets: 3
+          reps: 12
+          weight_kg: 60
+          rest_seconds: 60
+          notes: "Feet hip-width. Stop at 90° knee angle."
+        - name: "Romanian Deadlift (light)"
+          sets: 3
+          reps: 10
+          weight_kg: 15
+          rest_seconds: 60
+          notes: "Dumbbells. Hinge from hips. Keep spine neutral."
+        - name: "Pallof Press"
+          sets: 3
+          reps: 10
+          weight_kg: 8
+          rest_seconds: 45
+          notes: "Each side. Anti-rotation core stability."
+        - name: "Treadmill Incline Walk (cardio block)"
+          sets: 1
+          duration_minutes: 15
+          speed_kmh: 4.5
+          incline_percent: 5
+          notes: "Fat loss zone — 65–70% max HR."
+
+    - day: 5
+      date: "2026-05-29"
+      workout_type: "C — Full Body + Endurance"
+      duration_minutes: 65
+      exercises:
+        - name: "Stationary Bike (cardio block)"
+          sets: 1
+          duration_minutes: 20
+          intensity: "moderate — RPE 5–6/10"
+          notes: "Increase resistance every 5 minutes by 1 level."
+        - name: "Glute Bridge"
+          sets: 2
+          reps: 15
+          notes: "Activation set before compound movements."
+        - name: "Lat Pulldown"
+          sets: 2
+          reps: 12
+          weight_kg: 30
+          rest_seconds: 60
+        - name: "Goblet Squat"
+          sets: 2
+          reps: 10
+          weight_kg: 8
+          rest_seconds: 60
+        - name: "Seated Cable Row"
+          sets: 2
+          reps: 12
+          weight_kg: 25
+          rest_seconds: 60
+        - name: "Dead Bug"
+          sets: 2
+          reps: 8
+          notes: "Each side."
+        - name: "Bird Dog"
+          sets: 2
+          reps: 8
+          notes: "Each side."
+        - name: "Treadmill Incline Walk (cool-down endurance)"
+          sets: 1
+          duration_minutes: 15
+          speed_kmh: 5.0
+          incline_percent: 6
+          notes: "Increase incline 1% per week."
+
+- week: 2
+  phase: "Foundation"
+  sessions:
+    - day: 1
+      workout_type: "A — Upper Body + Core"
+      duration_minutes: 55
+      notes: "Same exercises as Week 1. Focus on form quality."
+      progression: "Increase reps by 1 on all strength exercises if previous week felt easy."
+    - day: 3
+      workout_type: "B — Lower Body + Cardio"
+      duration_minutes: 60
+      notes: "Same exercises as Week 1."
+      progression: "Incline walk cardio block: increase to 18 min."
+    - day: 5
+      workout_type: "C — Full Body + Endurance"
+      duration_minutes: 65
+      notes: "Same exercises as Week 1."
+      progression: "Stationary bike: increase to 22 min."
+
+- week: 3
+  phase: "Foundation"
+  sessions:
+    - day: 1
+      workout_type: "A — Upper Body + Core"
+      duration_minutes: 58
+      notes: "Form consolidation week."
+      progression:
+        - "Lat Pulldown: +2.5 kg"
+        - "Seated Row: +2.5 kg"
+        - "Face Pull: +2.5 kg"
+    - day: 3
+      workout_type: "B — Lower Body + Cardio"
+      duration_minutes: 62
+      progression:
+        - "Goblet Squat: +2 kg (→ 10 kg dumbbell)"
+        - "Romanian Deadlift: +2.5 kg"
+        - "Cardio block: 20 min incline walk at 6%"
+    - day: 5
+      workout_type: "C — Full Body + Endurance"
+      duration_minutes: 68
+      progression:
+        - "Stationary bike: 25 min at moderate intensity"
+        - "Treadmill incline: 7% at 5.0 km/h"
+
+- week: 4
+  phase: "Foundation"
+  notes: "Deload / recovery week. All weights reduced 20%. Volume maintained."
+  sessions:
+    - day: 1
+      workout_type: "A — Upper Body + Core (Deload)"
+      duration_minutes: 45
+    - day: 3
+      workout_type: "B — Lower Body + Cardio (Deload)"
+      duration_minutes: 50
+    - day: 5
+      workout_type: "C — Full Body + Endurance (Deload)"
+      duration_minutes: 55
+      notes: "Reduce bike intensity to RPE 4. Focus on mobility and recovery."
+
+# ── MONTH 2 — Base Building Phase (Weeks 5–8) ────────────────────────────────
+
+- week: 5
+  phase: "Base Building"
+  sessions:
+    - day: 1
+      workout_type: "A — Upper Body + Core"
+      duration_minutes: 60
+      exercises:
+        - name: "Stationary Bike (warm-up)"
+          duration_minutes: 10
+          intensity: "easy"
+        - name: "Lat Pulldown"
+          sets: 3
+          reps: 10
+          weight_kg: 35
+        - name: "Seated Cable Row"
+          sets: 3
+          reps: 10
+          weight_kg: 30
+        - name: "Chest Press Machine"
+          sets: 3
+          reps: 10
+          weight_kg: 35
+        - name: "Seated Shoulder Press Machine"
+          sets: 3
+          reps: 10
+          weight_kg: 25
+        - name: "Cable Tricep Pushdown"
+          sets: 3
+          reps: 12
+          weight_kg: 15
+          notes: "New exercise."
+        - name: "Dumbbell Bicep Curl (seated)"
+          sets: 3
+          reps: 12
+          weight_kg: 8
+          notes: "Seated to remove lower back involvement."
+        - name: "Face Pull"
+          sets: 3
+          reps: 15
+          weight_kg: 12
+        - name: "Dead Bug"
+          sets: 3
+          reps: 10
+        - name: "Bird Dog"
+          sets: 3
+          reps: 10
+
+    - day: 3
+      workout_type: "B — Lower Body + Cardio"
+      duration_minutes: 65
+      exercises:
+        - name: "Treadmill Incline Walk"
+          duration_minutes: 12
+          speed_kmh: 5.0
+          incline_percent: 5
+        - name: "Hip Thrust Machine"
+          sets: 3
+          reps: 12
+          weight_kg: 40
+          notes: "New exercise. Better glute isolation than bridge."
+        - name: "Goblet Squat"
+          sets: 3
+          reps: 12
+          weight_kg: 12
+        - name: "Leg Press"
+          sets: 3
+          reps: 12
+          weight_kg: 70
+        - name: "Romanian Deadlift"
+          sets: 3
+          reps: 10
+          weight_kg: 20
+        - name: "Step-Up (low box, 20 cm)"
+          sets: 3
+          reps: 10
+          notes: "Each leg. Controlled."
+        - name: "Pallof Press"
+          sets: 3
+          reps: 12
+          weight_kg: 10
+        - name: "Treadmill Incline Walk (cardio)"
+          duration_minutes: 22
+          speed_kmh: 5.0
+          incline_percent: 7
+
+    - day: 5
+      workout_type: "C — Full Body + Endurance"
+      duration_minutes: 70
+      exercises:
+        - name: "Stationary Bike"
+          duration_minutes: 25
+          intensity: "moderate — RPE 6/10"
+        - name: "Hip Thrust Machine"
+          sets: 2
+          reps: 12
+          weight_kg: 40
+        - name: "Lat Pulldown"
+          sets: 2
+          reps: 10
+          weight_kg: 35
+        - name: "Goblet Squat"
+          sets: 2
+          reps: 12
+          weight_kg: 12
+        - name: "Chest Press Machine"
+          sets: 2
+          reps: 10
+          weight_kg: 35
+        - name: "Dead Bug"
+          sets: 2
+          reps: 10
+        - name: "Bird Dog"
+          sets: 2
+          reps: 10
+        - name: "Treadmill Incline Walk"
+          duration_minutes: 18
+          speed_kmh: 5.0
+          incline_percent: 8
+
+- week: 6
+  phase: "Base Building"
+  notes: "Progressive overload week."
+  sessions:
+    - day: 1
+      workout_type: "A — Upper Body + Core"
+      progression: "+2.5 kg on all pulling and pressing movements"
+    - day: 3
+      workout_type: "B — Lower Body + Cardio"
+      progression: "+5 kg leg press, +2.5 kg RDL, cardio block 24 min"
+    - day: 5
+      workout_type: "C — Full Body + Endurance"
+      progression: "Bike 28 min, incline 9%"
+
+- week: 7
+  phase: "Base Building"
+  notes: "Tempo training introduced. 3-second eccentric on all strength exercises."
+  sessions:
+    - day: 1
+      workout_type: "A — Upper Body + Core (Tempo)"
+    - day: 3
+      workout_type: "B — Lower Body + Cardio (Tempo)"
+    - day: 5
+      workout_type: "C — Full Body + Endurance"
+      progression: "Bike 30 min — first 30-min continuous session."
+
+- week: 8
+  phase: "Base Building"
+  notes: "Deload week. 20% weight reduction."
+  sessions:
+    - day: 1
+      workout_type: "A — Upper Body + Core (Deload)"
+    - day: 3
+      workout_type: "B — Lower Body + Cardio (Deload)"
+    - day: 5
+      workout_type: "C — Full Body + Endurance (Deload)"
+
+# ── MONTHS 3–4 — Progressive Overload Phase (Weeks 9–16) ─────────────────────
+
+- week: 9
+  phase: "Progressive Overload"
+  sessions:
+    - day: 1
+      workout_type: "A — Upper Body + Core"
+      exercises:
+        - name: "Stationary Bike (warm-up)"
+          duration_minutes: 10
+        - name: "Lat Pulldown"
+          sets: 4
+          reps: 10
+          weight_kg: 40
+        - name: "Seated Cable Row"
+          sets: 4
+          reps: 10
+          weight_kg: 35
+        - name: "Incline Dumbbell Press (45°)"
+          sets: 3
+          reps: 10
+          weight_kg: 14
+          notes: "New. Head and back fully supported on bench."
+        - name: "Seated Shoulder Press Machine"
+          sets: 3
+          reps: 10
+          weight_kg: 30
+        - name: "Cable Lateral Raise"
+          sets: 3
+          reps: 12
+          weight_kg: 5
+          notes: "New. Side deltoid isolation."
+        - name: "Cable Tricep Pushdown"
+          sets: 3
+          reps: 12
+          weight_kg: 20
+        - name: "Dumbbell Bicep Curl (seated)"
+          sets: 3
+          reps: 12
+          weight_kg: 10
+        - name: "Face Pull"
+          sets: 3
+          reps: 15
+          weight_kg: 14
+        - name: "Dead Bug"
+          sets: 3
+          reps: 12
+        - name: "Pallof Press"
+          sets: 3
+          reps: 12
+          weight_kg: 12
+
+    - day: 3
+      workout_type: "B — Lower Body + Cardio"
+      exercises:
+        - name: "Treadmill Incline Walk"
+          duration_minutes: 10
+          incline_percent: 5
+        - name: "Hip Thrust Machine"
+          sets: 4
+          reps: 10
+          weight_kg: 60
+        - name: "Goblet Squat"
+          sets: 3
+          reps: 12
+          weight_kg: 16
+        - name: "Split Squat (rear foot elevated, low height)"
+          sets: 3
+          reps: 8
+          weight_kg: 6
+          notes: "New. Each leg."
+        - name: "Leg Press"
+          sets: 3
+          reps: 12
+          weight_kg: 80
+        - name: "Romanian Deadlift"
+          sets: 3
+          reps: 10
+          weight_kg: 25
+        - name: "Pallof Press"
+          sets: 3
+          reps: 12
+          weight_kg: 12
+        - name: "Treadmill Jog/Walk Intervals"
+          duration_minutes: 25
+          protocol: "2 min walk (5.5 km/h) + 1 min jog (7.0 km/h) × 8 sets"
+          notes: "First jogging intervals."
+
+    - day: 5
+      workout_type: "C — Full Body + Endurance"
+      exercises:
+        - name: "Stationary Bike (steady state)"
+          duration_minutes: 30
+          intensity: "moderate — RPE 6/10"
+          notes: "First 30-min continuous session sustained."
+        - name: "Hip Thrust Machine"
+          sets: 2
+          reps: 10
+          weight_kg: 60
+        - name: "Lat Pulldown"
+          sets: 2
+          reps: 10
+          weight_kg: 40
+        - name: "Split Squat"
+          sets: 2
+          reps: 8
+          weight_kg: 6
+        - name: "Incline Dumbbell Press"
+          sets: 2
+          reps: 10
+          weight_kg: 14
+        - name: "Dead Bug"
+          sets: 2
+          reps: 12
+        - name: "Bird Dog"
+          sets: 2
+          reps: 12
+        - name: "Treadmill Walk/Jog"
+          duration_minutes: 20
+          protocol: "5% incline walk + 2×5 min easy jog at 7.0 km/h"
+
+- week: 10
+  phase: "Progressive Overload"
+  notes: "All weights +2.5 kg. Jog intervals: 1.5 min jog / 1.5 min walk."
+  sessions:
+    - day: 1
+      workout_type: "A"
+    - day: 3
+      workout_type: "B"
+    - day: 5
+      workout_type: "C"
+
+- week: 11
+  phase: "Progressive Overload"
+  notes: "All weights +2.5 kg. Jog intervals: 2 min jog / 1 min walk × 8 sets."
+  sessions:
+    - day: 1
+      workout_type: "A"
+    - day: 3
+      workout_type: "B"
+    - day: 5
+      workout_type: "C"
+
+- week: 12
+  phase: "Progressive Overload"
+  notes: "Deload. Assess all strength PRs. 5 km incline walk test."
+  sessions:
+    - day: 1
+      workout_type: "A (Deload)"
+    - day: 3
+      workout_type: "B (Deload)"
+    - day: 5
+      workout_type: "C — 5 km Incline Walk Assessment"
+
+# ── MONTHS 5–6 — Strength + Endurance Integration (Weeks 17–24) ──────────────
+
+- week: 17
+  phase: "Strength + Endurance Integration"
+  sessions:
+    - day: 1
+      workout_type: "A — Upper Body + Core"
+      exercises:
+        - name: "Stationary Bike (warm-up)"
+          duration_minutes: 10
+        - name: "Lat Pulldown (close grip)"
+          sets: 4
+          reps: 8
+          weight_kg: 50
+        - name: "Seated Cable Row"
+          sets: 4
+          reps: 8
+          weight_kg: 45
+        - name: "Incline Dumbbell Press"
+          sets: 3
+          reps: 8
+          weight_kg: 18
+        - name: "Seated Shoulder Press Machine"
+          sets: 3
+          reps: 8
+          weight_kg: 40
+        - name: "Cable Lateral Raise"
+          sets: 3
+          reps: 12
+          weight_kg: 8
+        - name: "Cable Tricep Pushdown"
+          sets: 3
+          reps: 10
+          weight_kg: 25
+        - name: "Dumbbell Bicep Curl (seated)"
+          sets: 3
+          reps: 10
+          weight_kg: 14
+        - name: "Face Pull"
+          sets: 3
+          reps: 15
+          weight_kg: 18
+        - name: "Dead Bug"
+          sets: 3
+          reps: 12
+        - name: "Pallof Press"
+          sets: 3
+          reps: 12
+          weight_kg: 15
+
+    - day: 3
+      workout_type: "B — Lower Body + Cardio"
+      exercises:
+        - name: "Hip Thrust Machine"
+          sets: 4
+          reps: 8
+          weight_kg: 80
+        - name: "Goblet Squat"
+          sets: 3
+          reps: 12
+          weight_kg: 24
+        - name: "Split Squat (rear foot elevated)"
+          sets: 3
+          reps: 10
+          weight_kg: 12
+        - name: "Leg Press"
+          sets: 3
+          reps: 10
+          weight_kg: 100
+        - name: "Romanian Deadlift (dumbbells)"
+          sets: 3
+          reps: 10
+          weight_kg: 35
+        - name: "Cable Pull-Through"
+          sets: 3
+          reps: 12
+          weight_kg: 15
+          notes: "New. Hip hinge pattern. Great posterior chain."
+        - name: "Pallof Press"
+          sets: 3
+          reps: 12
+          weight_kg: 15
+        - name: "Treadmill Jog"
+          duration_minutes: 30
+          protocol: "5 min walk warm-up → 20 min continuous jog (8.0 km/h) → 5 min cool-down walk"
+
+    - day: 5
+      workout_type: "C — Full Body + Endurance"
+      exercises:
+        - name: "Stationary Bike (HIIT)"
+          duration_minutes: 25
+          protocol: "5 min warm-up + 10 × (1 min hard RPE 8 / 1.5 min easy RPE 4) + 3 min cool-down"
+          notes: "HIIT introduced for fat loss acceleration."
+        - name: "Hip Thrust Machine"
+          sets: 2
+          reps: 8
+          weight_kg: 80
+        - name: "Lat Pulldown"
+          sets: 2
+          reps: 8
+          weight_kg: 50
+        - name: "Romanian Deadlift"
+          sets: 2
+          reps: 10
+          weight_kg: 35
+        - name: "Incline Dumbbell Press"
+          sets: 2
+          reps: 8
+          weight_kg: 18
+        - name: "Dead Bug"
+          sets: 2
+          reps: 12
+        - name: "Treadmill Jog"
+          duration_minutes: 20
+          protocol: "Continuous 8.0 km/h"
+
+# ── MONTHS 7–8 — Peak Phase (Weeks 25–32) ────────────────────────────────────
+
+- week: 25
+  phase: "Peak Phase"
+  sessions:
+    - day: 1
+      workout_type: "A — Upper Body + Core"
+      exercises:
+        - name: "Stationary Bike (warm-up)"
+          duration_minutes: 10
+        - name: "Lat Pulldown"
+          sets: 4
+          reps: 8
+          weight_kg: 55
+        - name: "Seated Cable Row"
+          sets: 4
+          reps: 8
+          weight_kg: 50
+        - name: "Incline Dumbbell Press"
+          sets: 3
+          reps: 8
+          weight_kg: 20
+        - name: "Seated Shoulder Press Machine"
+          sets: 3
+          reps: 8
+          weight_kg: 45
+        - name: "Cable Lateral Raise"
+          sets: 3
+          reps: 12
+          weight_kg: 10
+        - name: "Cable Tricep Pushdown"
+          sets: 3
+          reps: 10
+          weight_kg: 28
+        - name: "Dumbbell Bicep Curl (seated)"
+          sets: 3
+          reps: 10
+          weight_kg: 16
+        - name: "Face Pull"
+          sets: 3
+          reps: 15
+          weight_kg: 20
+        - name: "Dead Bug"
+          sets: 3
+          reps: 15
+        - name: "Pallof Press"
+          sets: 3
+          reps: 15
+          weight_kg: 18
+
+    - day: 3
+      workout_type: "B — Lower Body + Cardio"
+      exercises:
+        - name: "Hip Thrust Machine"
+          sets: 4
+          reps: 8
+          weight_kg: 100
+        - name: "Goblet Squat"
+          sets: 3
+          reps: 12
+          weight_kg: 28
+        - name: "Split Squat"
+          sets: 3
+          reps: 10
+          weight_kg: 16
+        - name: "Leg Press"
+          sets: 3
+          reps: 10
+          weight_kg: 110
+        - name: "Romanian Deadlift (dumbbells)"
+          sets: 3
+          reps: 10
+          weight_kg: 40
+        - name: "Cable Pull-Through"
+          sets: 3
+          reps: 12
+          weight_kg: 20
+        - name: "Treadmill Jog"
+          duration_minutes: 35
+          protocol: "5 min walk → 25 min jog (8.5 km/h) → 5 min cool-down"
+
+    - day: 5
+      workout_type: "C — Full Body + Endurance"
+      exercises:
+        - name: "Stationary Bike (HIIT)"
+          duration_minutes: 30
+          protocol: "5 min warm-up + 12 × (1 min hard / 1 min easy) + 5 min cool-down"
+        - name: "Hip Thrust Machine"
+          sets: 2
+          reps: 8
+          weight_kg: 100
+        - name: "Lat Pulldown"
+          sets: 2
+          reps: 8
+          weight_kg: 55
+        - name: "Romanian Deadlift"
+          sets: 2
+          reps: 10
+          weight_kg: 40
+        - name: "Incline Dumbbell Press"
+          sets: 2
+          reps: 8
+          weight_kg: 20
+        - name: "Dead Bug"
+          sets: 2
+          reps: 15
+        - name: "Treadmill Jog"
+          duration_minutes: 30
+          protocol: "Continuous jog 8.5 km/h — 5 km target"
+
+- week: 32
+  phase: "Peak Phase — Final Assessment"
+  notes: "8-month program complete. Final body composition measurement. 5 km timed jog test."
+  sessions:
+    - day: 1
+      workout_type: "A — Upper Body + Core (Final Session)"
+    - day: 3
+      workout_type: "5 km Timed Jog Assessment"
+      exercises:
+        - name: "Treadmill 5 km Timed Run"
+          protocol: "Target: complete 5 km continuously at ≥ 8.0 km/h"
+          notes: "Final endurance milestone. Record time."
+    - day: 5
+      workout_type: "C — Full Body + Final Measurement"
+      notes: "Light full-body session. Body composition measurement. Progress photos."

@@ -1,0 +1,13 @@
+# =============================================================================
+# FitForecast — Weekly Body Composition Tracking (Weeks 0–32)
+# Measured: every Sunday morning, fasted, same smart scale
+# =============================================================================
+
+- week: 0
+  date: "2026-05-24"
+  weight_kg: 91.1
+  body_fat_percent: 34.5
+  muscle_mass_kg: 33.6
+  waist_hip_ratio: 0.95
+  visceral_fat_level: 13
+  notes: "Baseline measurement — gym start date"

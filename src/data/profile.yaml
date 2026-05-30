@@ -1,0 +1,41 @@
+# =============================================================================
+# FitForecast — Subject Profile
+# Demographics, baseline body composition, activity history, health, and goals.
+# =============================================================================
+
+version: "1.0"
+generated_date: "2026-05-24"
+
+demographics:
+  gender: "male"
+  age: 30
+  height_cm: 173
+  gym_start_date: "2026-05-24"
+  gym_experience: "none"
+
+body_composition:
+  weight_kg: 91.1
+  body_fat_percent: 34.5
+  muscle_mass_kg: 33.6
+  waist_hip_ratio: 0.95
+  visceral_fat_level: 13
+
+activity_history:
+  previous_gym_experience_years: 0
+  equipment_familiarity: "none"
+  last_exercise_type: "treadmill"
+  last_exercise_date: "2026-02-01"
+  weekly_activity_frequency: "sedentary"
+
+health:
+  lower_back_pain:
+    present: true
+    severity: "mild"
+  other_conditions: []
+
+goals:
+  primary_goal:
+    - "fat_loss"
+    - "endurance"
+  training_frequency_per_week: 3
+  dietary_preference: "calorie_deficit"
