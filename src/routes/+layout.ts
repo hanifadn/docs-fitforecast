@@ -7,6 +7,7 @@ import exerciseLogYaml from '../data/exercise-log.yaml?raw';
 import exerciseLibraryYaml from '../data/exercise-library.yaml?raw';
 
 export const prerender = true;
+export const trailingSlash = 'always';
 
 export function load() {
 	const data: FitForecastData = {
